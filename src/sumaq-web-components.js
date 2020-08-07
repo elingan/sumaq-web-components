@@ -14,7 +14,7 @@ export class SumaqWebComponents extends LitElement {
   static get properties() {
     return {
       title: { type: String },
-      counter: { type: Number },
+      counter: { type: Number }
     };
   }
 

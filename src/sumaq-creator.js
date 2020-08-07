@@ -1,14 +1,7 @@
 import { LitElement, html, css } from 'lit-element';
 
-class SumaqAuthor extends LitElement {
+export class SumaqCreator extends LitElement {
   static get styles() {
-    // position: absolute;
-    // left: 0.5rem;
-    // bottom: 0.5rem;
-    // margin: 0;
-    // // font-size: $font-size-sm;
-    // color: darken($white, 75%);
-    // z-index: 10;
     return css`
       :host {
         font-size: x-small;
@@ -33,7 +26,7 @@ class SumaqAuthor extends LitElement {
 
   constructor() {
     super()
-    this.name = 'Eduardo Lingán'
+    this.name = 'Sumaq Websites'
     this.link = 'https://elingan.com'
   }
 
@@ -44,6 +37,4 @@ class SumaqAuthor extends LitElement {
     `
   }
 }
-customElements.define('sumaq-author', SumaqAuthor);
 
-// export default SumaqAuthor

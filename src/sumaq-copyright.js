@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit-element';
 
-class SumaqCopyright extends LitElement {
+export class SumaqCopyright extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -32,10 +32,12 @@ class SumaqCopyright extends LitElement {
   render() {
     return html`
       ${this.sinceYear ?
-        html`<p>©${this.sinceYear}-${this._currentYear} <slot></slot></p>` :
-        html`<p>©${this._currentYear} <slot></slot></p>`
+        html`<p>© ${this.sinceYear}-${this._currentYear} <slot></slot></p>` :
+        html`<p>© ${this._currentYear} <slot></slot></p>`
       }
     `
   }
 }
-customElements.define('sumaq-copyright', SumaqCopyright);
+// customElements.define('sumaq-copyright', SumaqCopyright);
+
+// export default SumaqCopyright

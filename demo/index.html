@@ -1,41 +1,57 @@
 <!doctype html>
 <html lang="en-GB">
+
 <head>
   <meta charset="utf-8">
   <style>
-    body {
-      /* background: #fafafa; */
-    }
-    sumaq-author {
-      /* display: block; */
-    }
   </style>
 </head>
+
 <body>
   <!-- <div id="demo"></div> -->
-  <p>Made with...</p>
-  <sumaq-author></sumaq-author>
-  <br>
-  <sumaq-author name="SUMAQ Websites" link="http://sumaq.site"></sumaq-author>
-  <hr>
-  <sumaq-copyright>SUMAQ Websites</sumaq-copyright>
-  <br>
-  <sumaq-copyright since-year="2000">SUMAQ Websites</sumaq-copyright>
+  <h1>Sumaq Websites Components</h1>
+  <section>
+    <h4>sumaq-creator</h4>
+    <sumaq-creator></sumaq-creator>
+    <br>
+    <sumaq-creator name="SUMAQ Websites" link="http://sumaq.site"></sumaq-creator>
+  </section>
+  <section>
+    <h4>sumaq-copyright</h4>
+    <sumaq-copyright>SUMAQ Websites, all rights reserved.</sumaq-copyright>
+    <br>
+    <sumaq-copyright since-year="2000">SUMAQ Websites, all rights reserved.</sumaq-copyright>
+  </section>
+  <section>
+    <h4>sumaq-size-screen</h4>
+    <sumaq-size-screen xs="600"></sumaq-size-screen>
+  </section>
+  <section>
+    <h4>sumaq-web-components (demo)</h4>
+    <sumaq-web-components></sumaq-web-components>
+  </section>
 
-  <script type="module" src="../index.js"></script>
+  <!-- <script type="module" src="../index.js"></script> -->
+
+  <script type="module" src="../sumaq-creator.js"></script>
+  <script type="module" src="../sumaq-size-screen.js"></script>
+  <script type="module" src="../sumaq-copyright.js"></script>
+  <script type="module" src="../sumaq-web-components.js"></script>
+
   <!-- <script type="module">
     import { html, render } from 'lit-html';
     import '../sumaq-web-components.js';
 
-    // const title = 'Hello owc World!';
-    // render(
-    //   html`
-    //     <sumaq-web-components .title=${title}>
-    //       some more light-dom
-    //     </sumaq-web-components>
-    //   `,
-    //   document.querySelector('#demo')
-    // );
+    const title = 'Hello owc World!';
+    render(
+      html`
+        <sumaq-web-components .title=${title}>
+          some more light-dom
+        </sumaq-web-components>
+      `,
+      document.querySelector('#demo')
+    );
   </script> -->
 </body>
+
 </html>

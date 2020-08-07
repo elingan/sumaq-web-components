@@ -1,3 +1,3 @@
-import { SumaqWebComponents } from './src/SumaqWebComponents.js';
+import { SumaqWebComponents } from './src/sumaq-web-components.js';
 
-window.customElements.define('sumaq-web-components', SumaqWebComponents);
+customElements.define('sumaq-web-components', SumaqWebComponents);
